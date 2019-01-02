@@ -22,7 +22,7 @@ export class PinEffects {
   @Effect() getPins$: Observable<Action> = this.actions$
     .ofType(pin.ActionTypes.GET_PINS)
     .map(action => action.payload)
-    .debounceTime(400)
+    // .debounceTime(400)
     .switchMap(() =>this.pinDataService.getPins())
     .map((pins: Pin[]) => {
       let users = pins.map(pin => pin.user)

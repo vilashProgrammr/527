@@ -12,12 +12,11 @@ import { EffectsModule } from '@ngrx/effects';
 import { MasonryModule } from 'angular2-masonry';
 import { InfiniteScrollModule } from 'angular2-infinite-scroll';
 import {SlimLoadingBarModule} from 'ng2-slim-loading-bar';
-import { TagInputModule } from 'ng2-tag-input';
+// import { TagInputModule } from 'ng2-tag-input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/shared/header/header.component';
-import { FooterComponent } from './components/shared/footer/footer.component';
 import { AuthenticationService } from './services/authentication';
 import { reducer, AppState } from './reducers/index';
 import { UserAuthEffects } from './effects/user-auth';
@@ -71,7 +70,6 @@ import 'rxjs/add/observable/of';
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent,
     PinsComponent,
     PinItemComponent,
     PinDetailComponent,
@@ -106,7 +104,7 @@ import 'rxjs/add/observable/of';
     InfiniteScrollModule,
     SlimLoadingBarModule.forRoot(),
     ToasterModule,
-    TagInputModule,
+    // TagInputModule,
     BrowserAnimationsModule
   ],
   providers: [

@@ -90,7 +90,7 @@
     </form>
 
     <div class="input-group pinTags">
-      <tag-input
+      <!-- <tag-input
         [(ngModel)]='pinTags'
         placeholder="+ more (max: 5)"
         secondaryPlaceholder="Tags (max: 5)"
@@ -101,7 +101,7 @@
         (onRemove)="onItemUpdate($event)"
         (onBlur)="pinForm.controls['tags'].markAsTouched()"
         [ngClass]="{'ng-invalid': pinForm.get('tags').touched && !pinForm.get('tags').valid,'ng-touched': pinForm.get('tags').touched}"
-      ></tag-input>
+      ></tag-input> -->
     </div>
     <!--<span class="form-error" [ngClass]="{'is-visible': pinForm.get('tags').touched && !pinForm.get('tags').valid}">
       I'm Invalid!

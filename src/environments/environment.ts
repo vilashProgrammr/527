@@ -7,7 +7,7 @@ export const environment = {
   production: false,
   // apiEndpoint: 'https://pinwork-api.herokuapp.com/api/',
   // socketEndpoint: 'wss://pinwork-api.herokuapp.com',
-  apiEndpoint: 'http://localhost:4000/api/',
-  socketEndpoint: 'ws://localhost:4000',
+  apiEndpoint: 'https://pinwork-api.herokuapp.com/api/',
+  socketEndpoint: 'wss://pinwork-api.herokuapp.com',
   basic_auth_token: btoa('api:password')
 };
